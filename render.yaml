@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: viru7709
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python Zmsbte/bot.py
