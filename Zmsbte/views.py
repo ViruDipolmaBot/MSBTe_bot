@@ -6,10 +6,10 @@ from telegram.ext import Dispatcher, CommandHandler
 import json
 from django.conf import settings
 from .models import Syllabus, QuestionPaper
-from telegram import Update, Bot
-from telegram.ext import Dispatcher, CommandHandler
+#from telegram import Update, Bot
+#from telegram.ext import Dispatcher, CommandHandler
 
-bot = Bot(token="YOUR_TELEGRAM_BOT_TOKEN")
+bot = Bot(token="7979851577:AAHgyi8zQ46zQt-CRSo_WRQEdCdvlP520rs")
 
 def start(update, context):
     update.message.reply_text("👋 Hi! I am MSBTE Bot.\nCommands:\n/syllabus <subject>\n/paper <subject> <year>")

@@ -4,8 +4,8 @@ from .models import Syllabus, QuestionPaper
 
 @admin.register(Syllabus)
 class SyllabusAdmin(admin.ModelAdmin):
-    list_display = ('subject_name', 'scheme')
-    list_filter = ('scheme',)
+    list_display = ('branch', 'semester', 'subject')
+    search_fields = ('branch', 'semester', 'subject')
 
 @admin.register(QuestionPaper)
 class QuestionPaperAdmin(admin.ModelAdmin):
